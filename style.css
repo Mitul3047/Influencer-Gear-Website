@@ -1,0 +1,111 @@
+body {
+    padding: 80px 120px;
+    color: #3A3A3A;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-manu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-manu li {
+    list-style: none;
+    margin-left: 34px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 4.3rem;
+    /* 250% */
+
+}
+
+.nav-container .logo h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8.25rem;
+    background-image: url("./images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.banner-title {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+    /* 134.615% */
+    margin-bottom: 1rem;
+    max-width: 582px;
+}
+
+.banner-description {
+    font-size: 1rem;
+    font-weight: 600;
+    max-width: 505px;
+    margin-bottom: 16px;
+}
+
+.btn-primary {
+    padding: 10px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #fff;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.market-place{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+    body{
+        padding: 29px;
+        text-align: center;
+    }
+    .nav-container{
+        flex-direction: column;
+
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        background-size: auto;
+        background-position: top;
+        height: auto;
+        gap: 14px;
+    }
+
+    .nav-manu li {
+        margin: 5px;
+    }
+
+    .market-place{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+}
