@@ -73,7 +73,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 /* collectiom */
@@ -105,7 +105,7 @@ body {
     border-radius: 5px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     padding: 15px;
-    width: 329px;
+    max-width: 329px;
     height: 476px;
 
 }
@@ -151,6 +151,24 @@ body {
     letter-spacing: 0.252px;
 }
 
+.more {
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: right;
+
+}
+
+.feature-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+.btn-join{
+    border-radius: 0;
+}
+
 /* responsive */
 
 @media screen and (max-width:576px) {
@@ -158,6 +176,7 @@ body {
         padding: 29px;
         text-align: center;
         margin: auto;
+        overflow-x: hidden;
     }
 
     .nav-container {
@@ -165,12 +184,13 @@ body {
 
     }
 
-    .banner-container {
+    .banner-container, .feature-container {
         flex-direction: column-reverse;
         background-size: auto;
         background-position: top;
         height: auto;
         gap: 14px;
+        overflow-x: hidden;
     }
 
     .nav-manu li {
@@ -185,15 +205,20 @@ body {
         gap: 10px;
         max-width: 360px;
         margin: auto;
+        width: 100%;
+        overflow: hidden;
     }
 
     .card-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
-        margin: auto;
-    
+        margin:  20px auto;
+        overflow: hidden;
+        text-align: left;
+
     }
-    .card{
-        margin: auto;
+
+    .card {
+        margin: 30px auto;
     }
 }
